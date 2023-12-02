@@ -1,0 +1,101 @@
+:root {
+    --font-mono: ui-monospace, menlo, monaco,'Cascadia Mono', 'Segoe Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'droid Sans Mono', 'Courtier New', monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0355, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    
+}
+ 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    flex-direction: column;
+}
+
+section h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+section h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700;
+}
+
+section form {
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border:2px solid #ce5d00;
+    color: #fff;
+}
+
+section form label {
+    width: 100%;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    
+}
+
+section form input {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: #ce5d00;
+    background-color: #a7a7a7;
+    
+}
+
+section form input[type="submit"] {
+margin-top: 1.5em;
+background-color: transparent;
+border: 2px solid #ce5d00;
+color: #fff;
+cursor: pointer;
+transition: var(--transition);
+}
+section form input[type="submit"]:hover {
+background-color: #ce5d00;
+}
+
+section form input[type="submit"]:active {
+    transform: scale(0.9);
+}
+
+section p {
+    color: #a7a7a7;
+  
+    margin-top: 1.5em;
+}
+
+section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #ce5d00
+};
